@@ -9,7 +9,9 @@ project:
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+    - sfm@svn-5767.devcloud.hosting.acquia.com:sfm.git
+    - git@github.com:jayakrishnanj/sfms.git
 deploy:
   tag_source: true
 drush:
