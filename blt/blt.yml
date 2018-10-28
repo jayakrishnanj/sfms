@@ -1,7 +1,7 @@
 project:
   machine_name: sfms
-  prefix: BLT
-  human_name: 'BLTed 8'
+  prefix: SFMS
+  human_name: 'Supplier Feedback & Monitoring System'
   profile:
     name: lightning
   local:
