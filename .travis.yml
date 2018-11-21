@@ -47,7 +47,7 @@ before_install:
   # Disable xdebug.
   - |
 
-    declare -r SSH_FILE="$(mktemp -u $HOME/.ssh/XXXXX)"
+    declare -r SSH_FILE="$(mktemp -u $HOME/.ssh/jktravis)"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
