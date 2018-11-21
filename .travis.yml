@@ -16,6 +16,7 @@ env:
     - COMPOSER_BIN=$TRAVIS_BUILD_DIR/vendor/bin
     - BLT_DIR=$TRAVIS_BUILD_DIR/vendor/acquia/blt
     - BUILD_DIR=$TRAVIS_BUILD_DIR
+    - secure: X/J2vntLmc1eWBBHh0KLvLUyX45WzCOIurWwsMteOQd3BTCwkrHiCs5L/wbagpMgES1HUsc7en26QPu+v6Al72trNcgaAAM7IxULungB8GxmA4NOxhaNw2YMiGnA5GmIHFevIRY/J8YBbtU5q9gZz2rLuzXKsOeB8cm9rArtlQNkctTkZ/gpbx+VmlszKKeCKNLziPyCDxT/bT7hTNoaohD4XR1IJmQLlqNN+Rq2u7uyiXcyBHZzQSHDxjexo7q5hUDsM02Ln6Y34oW094sqxwFV/C9HCywIwxCB9unts03CQq8anGOWq4Sf3dXNvAhVtBqFmpGrwrTttw6ynJD7vNDOLUuoADe0FWW3arR02yIw48UF1qwE1wDOGcGA/QtAoDwJXN00nRCzyUo6gCEEVBq4MRzlp20dtRQAdF26cQIw9ibj2qkyl7xjtsu/niA/fNU1DtU2lz7sg+9nRi4HLzK6J/H2dv3IcJV0/1FfZtdhulYiR7+koUzUgJqNwcHEM0qgfGD9OA1o7w+2bJ7irYCWuC9hyiKzlw5Q0VKvNqwCLSUTWQqPLOjp/PkrWUFGTtim95UDaFPtd5Wn7bumkb7beGC6pGJ4azpcBmr3jx7p5aJLgUZRx7rKBo02FhY9yuXdycLxzbQOxLMZdbSGxxflrLC25OD6Lgq7P+3nseg=
 
 jdk:
   - oraclejdk8
@@ -36,7 +37,6 @@ cache:
 addons:
   ssh_known_hosts:
    - svn-5767.devcloud.hosting.acquia.com
-   - github.com
   chrome: stable
 
 # @see https://docs.travis-ci.com/user/notifications
