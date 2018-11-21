@@ -46,8 +46,7 @@ notifications:
 
 before_install:
 # Disable xdebug.
-  - openssl aes-256-cbc -K $encrypted_c0e917d90fe7_key -iv $encrypted_c0e917d90fe7_iv
-      -in jktravis.enc -out $HOME/.ssh/jktravis -d|
+  - openssl aes-256-cbc -K $encrypted_c0e917d90fe7_key -iv $encrypted_c0e917d90fe7_iv -in jktravis.enc -out $HOME/.ssh/jktravis -d
   - phpenv config-rm xdebug.ini
   - composer self-update
   - composer validate --no-check-all --ansi
