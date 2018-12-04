@@ -1,0 +1,14 @@
+uuid: d786e9be-b3e4-41a1-bf54-2e58a82035f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.project_creator
+  module:
+    - user
+id: user_add_role_action.project_creator
+label: 'Add the Project creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: project_creator

@@ -1,0 +1,76 @@
+uuid: 337a4f6a-8874-47e5-9b86-9eaf1cfab828
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.field_project_end_date
+    - field.field.node.project.field_project_mavenlink_id
+    - field.field.node.project.field_project_quarter
+    - field.field.node.project.field_project_sr_feedback
+    - field.field.node.project.field_project_start_date
+    - field.field.node.project.field_project_supplier_feedback
+    - node.type.project
+  module:
+    - datetime
+    - user
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  field_project_end_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_project_mavenlink_id:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_project_quarter:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_project_sr_feedback:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_project_start_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_project_supplier_feedback:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

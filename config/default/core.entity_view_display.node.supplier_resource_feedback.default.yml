@@ -1,0 +1,28 @@
+uuid: d50f84af-5404-4eaa-bb98-88ef7a45272b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.supplier_resource_feedback.body
+    - node.type.supplier_resource_feedback
+  module:
+    - text
+    - user
+id: node.supplier_resource_feedback.default
+targetEntityType: node
+bundle: supplier_resource_feedback
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

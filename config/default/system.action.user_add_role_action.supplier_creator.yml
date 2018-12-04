@@ -1,0 +1,14 @@
+uuid: bef92b12-5633-4228-9665-87361d331d3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supplier_creator
+  module:
+    - user
+id: user_add_role_action.supplier_creator
+label: 'Add the Supplier creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: supplier_creator

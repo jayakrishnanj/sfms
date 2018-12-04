@@ -1,0 +1,14 @@
+uuid: 39432cf1-4d60-4ef2-838c-c836e8cdbb5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supplier_reviewer
+  module:
+    - user
+id: user_remove_role_action.supplier_reviewer
+label: 'Remove the Supplier reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: supplier_reviewer

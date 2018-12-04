@@ -1,0 +1,18 @@
+uuid: 2d954ec7-4c85-4c59-bb45-493e8cc7d607
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.incident
+id: node.incident.title
+field_name: title
+entity_type: node
+bundle: incident
+label: Subject
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: d48f22f8-1ba4-4892-91c4-6658ba61039e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Supplier Resource'
+type: supplier_resource
+description: "Use this content type for adding details about the resource.\r\n"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,20 @@
+uuid: 26dccf3e-5a5b-45f5-90c2-17bd60c03cc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_project_end_date
+field_name: field_project_end_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

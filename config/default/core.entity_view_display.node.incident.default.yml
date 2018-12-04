@@ -1,0 +1,28 @@
+uuid: a973ff3f-6d28-4d25-9fff-672f9de9a2ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.incident.body
+    - node.type.incident
+  module:
+    - text
+    - user
+id: node.incident.default
+targetEntityType: node
+bundle: incident
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

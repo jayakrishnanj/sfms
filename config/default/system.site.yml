@@ -1,0 +1,14 @@
+uuid: 966293c0-044b-44ef-a1cc-c747c4344f9a
+name: 'Supplier Feedback & Monitoring System'
+mail: no-reply@acquia.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

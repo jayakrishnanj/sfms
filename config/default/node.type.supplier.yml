@@ -1,0 +1,18 @@
+uuid: 8bc52a65-d777-4dfc-8bdb-e82eea985afa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Supplier
+type: supplier
+description: "Use this content type for adding supplier, such as an 'Axelerant' page.\t\r\n"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,30 @@
+uuid: 5c52c3a5-4bbd-47db-8d10-2cc262703b72
+langcode: en
+status: true
+dependencies: {  }
+id: supplier_feedback_creator
+label: 'Supplier Feedback creator'
+weight: 9
+is_admin: false
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node supplier_feedback content'
+  - 'administer panelizer node supplier_feedback layout'
+  - 'change layouts in place editing'
+  - 'create supplier_feedback content'
+  - 'create url aliases'
+  - 'edit own supplier_feedback content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use exclude node title'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view supplier_feedback revisions'

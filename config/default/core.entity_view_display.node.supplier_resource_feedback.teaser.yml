@@ -1,0 +1,30 @@
+uuid: 26ec4eff-c074-4103-9ffc-083465756feb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.supplier_resource_feedback.body
+    - node.type.supplier_resource_feedback
+  module:
+    - text
+    - user
+id: node.supplier_resource_feedback.teaser
+targetEntityType: node
+bundle: supplier_resource_feedback
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

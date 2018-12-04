@@ -1,0 +1,28 @@
+uuid: c986a004-d684-4d51-b554-8611ed4a60e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sr_supplier
+    - node.type.supplier
+    - node.type.supplier_resource
+id: node.supplier_resource.field_sr_supplier
+field_name: field_sr_supplier
+entity_type: node
+bundle: supplier_resource
+label: Supplier
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      supplier: supplier
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

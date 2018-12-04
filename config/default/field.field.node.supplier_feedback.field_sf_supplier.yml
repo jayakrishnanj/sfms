@@ -1,0 +1,28 @@
+uuid: ac0ee1dd-efe6-4100-a834-b05a9f3311de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_supplier
+    - node.type.supplier
+    - node.type.supplier_feedback
+id: node.supplier_feedback.field_sf_supplier
+field_name: field_sf_supplier
+entity_type: node
+bundle: supplier_feedback
+label: Supplier
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      supplier: supplier
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

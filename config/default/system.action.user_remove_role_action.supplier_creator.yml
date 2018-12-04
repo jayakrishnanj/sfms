@@ -1,0 +1,14 @@
+uuid: 2015856b-2967-4e47-82fc-8d46d71a3d17
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supplier_creator
+  module:
+    - user
+id: user_remove_role_action.supplier_creator
+label: 'Remove the Supplier creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: supplier_creator

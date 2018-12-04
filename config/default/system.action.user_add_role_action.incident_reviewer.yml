@@ -1,0 +1,14 @@
+uuid: a6719bd2-20d4-4b4d-ba1f-d24bf2e25798
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.incident_reviewer
+  module:
+    - user
+id: user_add_role_action.incident_reviewer
+label: 'Add the Incident reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: incident_reviewer

@@ -1,0 +1,29 @@
+uuid: e8c2a42a-f0ac-4042-973f-dc8c43c660b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_quarter
+    - node.type.project
+    - taxonomy.vocabulary.quarters
+id: node.project.field_project_quarter
+field_name: field_project_quarter
+entity_type: node
+bundle: project
+label: Quarter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

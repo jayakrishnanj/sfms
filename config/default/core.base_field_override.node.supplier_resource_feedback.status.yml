@@ -1,0 +1,22 @@
+uuid: ecfe0922-7542-458b-94c7-e0df09dfefc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.supplier_resource_feedback
+id: node.supplier_resource_feedback.status
+field_name: status
+entity_type: node
+bundle: supplier_resource_feedback
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

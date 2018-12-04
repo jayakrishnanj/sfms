@@ -1,0 +1,30 @@
+uuid: 8b3e2150-c596-4bd9-ab1b-7fc149fe734c
+langcode: en
+status: true
+dependencies: {  }
+id: incident_creator
+label: 'Incident creator'
+weight: 17
+is_admin: false
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node incident content'
+  - 'administer panelizer node incident layout'
+  - 'change layouts in place editing'
+  - 'create incident content'
+  - 'create url aliases'
+  - 'edit own incident content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use exclude node title'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view incident revisions'
+  - 'view latest version'
+  - 'view own unpublished content'

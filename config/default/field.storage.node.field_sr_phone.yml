@@ -1,0 +1,20 @@
+uuid: fcfc6166-9d69-4fc6-b679-5145aa519a27
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_sr_phone
+field_name: field_sr_phone
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

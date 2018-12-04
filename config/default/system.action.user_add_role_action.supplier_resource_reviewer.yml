@@ -1,0 +1,14 @@
+uuid: 7d29e108-f5b0-4e93-8a16-e1ab631ba5ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supplier_resource_reviewer
+  module:
+    - user
+id: user_add_role_action.supplier_resource_reviewer
+label: 'Add the Supplier Resource reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: supplier_resource_reviewer

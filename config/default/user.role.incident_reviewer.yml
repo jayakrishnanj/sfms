@@ -1,0 +1,20 @@
+uuid: ddf918cd-5561-4bc2-ae44-bd15bd73d4b3
+langcode: en
+status: true
+dependencies: {  }
+id: incident_reviewer
+label: 'Incident reviewer'
+weight: 18
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'delete any incident content'
+  - 'edit any incident content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'use exclude node title'
+  - 'use moderation sidebar'
+  - 'view any unpublished content'
+  - 'view latest version'

@@ -1,0 +1,14 @@
+uuid: da2d4469-4503-477b-aa55-a96236d76cfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supplier_resource_feedback_reviewer
+  module:
+    - user
+id: user_remove_role_action.supplier_resource_feedback_reviewer
+label: 'Remove the Supplier Resource Feedback reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: supplier_resource_feedback_reviewer

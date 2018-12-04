@@ -1,0 +1,28 @@
+uuid: bab55659-e026-4af7-9e15-d373a40fa452
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_supplier_feedback
+    - node.type.project
+    - node.type.supplier_feedback
+id: node.project.field_project_supplier_feedback
+field_name: field_project_supplier_feedback
+entity_type: node
+bundle: project
+label: 'Supplier Feedback'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      supplier_feedback: supplier_feedback
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: supplier
+field_type: entity_reference

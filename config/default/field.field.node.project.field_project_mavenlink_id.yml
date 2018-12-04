@@ -1,0 +1,19 @@
+uuid: b4cef983-2fa2-40c6-8959-4635a71c822f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_mavenlink_id
+    - node.type.project
+id: node.project.field_project_mavenlink_id
+field_name: field_project_mavenlink_id
+entity_type: node
+bundle: project
+label: 'Mavenlink Workspace Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

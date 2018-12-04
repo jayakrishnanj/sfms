@@ -1,0 +1,14 @@
+uuid: 741953aa-8880-43af-ab51-e16005223619
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supplier_resource_feedback_creator
+  module:
+    - user
+id: user_remove_role_action.supplier_resource_feedback_creator
+label: 'Remove the Supplier Resource Feedback creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: supplier_resource_feedback_creator

@@ -1,0 +1,30 @@
+uuid: 325467d6-a2a9-4bc1-bec5-f4e662d7f934
+langcode: en
+status: true
+dependencies: {  }
+id: project_creator
+label: 'Project creator'
+weight: 15
+is_admin: false
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node project content'
+  - 'administer panelizer node project layout'
+  - 'change layouts in place editing'
+  - 'create project content'
+  - 'create url aliases'
+  - 'edit own project content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use exclude node title'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view project revisions'

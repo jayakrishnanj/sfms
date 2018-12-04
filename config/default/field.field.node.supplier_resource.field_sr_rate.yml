@@ -1,0 +1,23 @@
+uuid: 7ad0e0cd-3208-4ec2-91bf-0ba42574f163
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sr_rate
+    - node.type.supplier_resource
+id: node.supplier_resource.field_sr_rate
+field_name: field_sr_rate
+entity_type: node
+bundle: supplier_resource
+label: Rate
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: /hr
+field_type: decimal

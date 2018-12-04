@@ -1,0 +1,14 @@
+uuid: 113424d8-d398-4391-a411-e5dbf1370b12
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supplier_feedback_creator
+  module:
+    - user
+id: user_remove_role_action.supplier_feedback_creator
+label: 'Remove the Supplier Feedback creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: supplier_feedback_creator

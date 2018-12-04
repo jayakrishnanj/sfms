@@ -1,0 +1,20 @@
+uuid: 0e9edf40-bf3e-4839-80ca-54b7d610022c
+langcode: en
+status: true
+dependencies: {  }
+id: project_reviewer
+label: 'Project reviewer'
+weight: 16
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'delete any project content'
+  - 'edit any project content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'use exclude node title'
+  - 'use moderation sidebar'
+  - 'view any unpublished content'
+  - 'view latest version'

@@ -1,0 +1,37 @@
+uuid: c5bc15af-0eef-47ff-af9b-d3c1092a15ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.supplier_feedback.field_sf_project
+    - field.field.node.supplier_feedback.field_sf_supplier
+    - node.type.supplier_feedback
+  module:
+    - user
+id: node.supplier_feedback.default
+targetEntityType: node
+bundle: supplier_feedback
+mode: default
+content:
+  field_sf_project:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sf_supplier:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

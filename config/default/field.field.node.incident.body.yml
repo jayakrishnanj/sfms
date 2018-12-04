@@ -1,0 +1,22 @@
+uuid: 8a2b016d-c903-465a-bedb-7cda68fafea6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.incident
+  module:
+    - text
+id: node.incident.body
+field_name: body
+entity_type: node
+bundle: incident
+label: Details
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

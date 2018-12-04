@@ -1,0 +1,14 @@
+uuid: 416105cb-1c58-43c0-969f-42b99714f047
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supplier_feedback_creator
+  module:
+    - user
+id: user_add_role_action.supplier_feedback_creator
+label: 'Add the Supplier Feedback creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: supplier_feedback_creator

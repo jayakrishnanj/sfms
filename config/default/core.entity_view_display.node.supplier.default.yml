@@ -1,0 +1,33 @@
+uuid: ddae83bd-9e6f-45d4-bf08-5ca04396c5bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.supplier.field_availability_sheet
+    - node.type.supplier
+  module:
+    - link
+    - user
+id: node.supplier.default
+targetEntityType: node
+bundle: supplier
+mode: default
+content:
+  field_availability_sheet:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

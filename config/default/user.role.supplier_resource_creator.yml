@@ -1,0 +1,30 @@
+uuid: 9d2a57ff-472b-46f2-9f78-26d8ae30944d
+langcode: en
+status: true
+dependencies: {  }
+id: supplier_resource_creator
+label: 'Supplier Resource creator'
+weight: 11
+is_admin: false
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'access toolbar'
+  - 'administer panelizer node supplier_resource content'
+  - 'administer panelizer node supplier_resource layout'
+  - 'change layouts in place editing'
+  - 'create supplier_resource content'
+  - 'create url aliases'
+  - 'edit own supplier_resource content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use exclude node title'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view supplier_resource revisions'

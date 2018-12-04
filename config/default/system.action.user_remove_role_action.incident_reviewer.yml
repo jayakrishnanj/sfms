@@ -1,0 +1,14 @@
+uuid: 418f2e84-c2c7-4128-8d46-81f5deafaec9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.incident_reviewer
+  module:
+    - user
+id: user_remove_role_action.incident_reviewer
+label: 'Remove the Incident reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: incident_reviewer

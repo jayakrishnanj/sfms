@@ -1,0 +1,14 @@
+uuid: 22058a92-94fd-4248-b69d-7a3206eea9fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.incident_creator
+  module:
+    - user
+id: user_add_role_action.incident_creator
+label: 'Add the Incident creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: incident_creator
