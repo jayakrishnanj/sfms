@@ -1,0 +1,14 @@
+uuid: 8b43ddfe-8b7c-4ee7-af6f-bb3653205e8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.rating_creator
+  module:
+    - user
+id: user_remove_role_action.rating_creator
+label: 'Remove the Rating creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: rating_creator

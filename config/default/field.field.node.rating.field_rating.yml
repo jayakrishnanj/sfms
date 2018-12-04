@@ -1,0 +1,31 @@
+uuid: 6bc1a264-fb3c-44ef-bca8-19ba14be9ad9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.rating
+    - paragraphs.paragraphs_type.ratings
+  module:
+    - entity_reference_revisions
+id: node.rating.field_rating
+field_name: field_rating
+entity_type: node
+bundle: rating
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ratings: ratings
+    target_bundles_drag_drop:
+      ratings:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

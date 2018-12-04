@@ -1,0 +1,28 @@
+uuid: e3a72e5a-73f0-4261-985e-79827b373b1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_srf_supplier_resource
+    - node.type.supplier_resource
+    - node.type.supplier_resource_feedback
+id: node.supplier_resource_feedback.field_srf_supplier_resource
+field_name: field_srf_supplier_resource
+entity_type: node
+bundle: supplier_resource_feedback
+label: 'Supplier Resource'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      supplier_resource: supplier_resource
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

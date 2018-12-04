@@ -7,14 +7,21 @@ dependencies:
     - node.type.supplier
   module:
     - link
+    - panelizer
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.supplier.default
 targetEntityType: node
 bundle: supplier
 mode: default
 content:
   field_availability_sheet:
-    weight: 101
+    weight: 0
     label: above
     settings:
       trim_length: 80
@@ -26,8 +33,8 @@ content:
     type: link
     region: content
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

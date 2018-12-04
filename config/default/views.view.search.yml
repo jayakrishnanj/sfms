@@ -81,6 +81,7 @@ display:
               landing_page: teaser
               page: teaser
               project: default
+              rating: default
               supplier: default
               supplier_feedback: default
               supplier_resource: default

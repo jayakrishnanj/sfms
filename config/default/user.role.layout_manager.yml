@@ -15,6 +15,7 @@ permissions:
   - 'administer panelizer node landing_page defaults'
   - 'administer panelizer node page defaults'
   - 'administer panelizer node project defaults'
+  - 'administer panelizer node rating defaults'
   - 'administer panelizer node supplier defaults'
   - 'administer panelizer node supplier_feedback defaults'
   - 'administer panelizer node supplier_resource defaults'

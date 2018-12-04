@@ -1,0 +1,42 @@
+uuid: c1318575-ab40-4b4e-8099-4a9391f0c1ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rating.field_rating
+    - node.type.rating
+  module:
+    - paragraphs
+id: node.rating.default
+targetEntityType: node
+bundle: rating
+mode: default
+content:
+  field_rating:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Rating
+      title_plural: Ratings
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ratings
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -1,0 +1,14 @@
+uuid: f84ccd9d-a18a-4b57-b48a-7318fd5f88d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.rating_reviewer
+  module:
+    - user
+id: user_remove_role_action.rating_reviewer
+label: 'Remove the Rating reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: rating_reviewer

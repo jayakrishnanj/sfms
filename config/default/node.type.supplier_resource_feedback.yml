@@ -11,8 +11,8 @@ third_party_settings:
     parent: 'main:'
 name: 'Supplier Resource Feedback'
 type: supplier_resource_feedback
-description: ''
+description: 'Add Resource and their project to receive the feedback on them.'
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

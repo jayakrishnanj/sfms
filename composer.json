@@ -5,13 +5,35 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/blt": "^9.2.0"
+        "acquia/blt": "^9.2.0",
+        "drupal/admin_toolbar": "^1.25",
+        "drupal/auto_entitylabel": "^2.1@beta",
+        "drupal/field_group": "^1.0",
+        "drupal/paragraphs": "^1.5",
+        "drupal/votingapi_widgets": "^1.0@alpha"
     },
     "require-dev": {
         "geerlingguy/drupal-vm": "^4.8"
     },
     "config": {
         "sort-packages": true
+    },
+    "repositories": {
+        "drupal-library":{
+            "type": "package",
+            "package": {
+                "name": "antennaio/jquery-bar-rating",
+                "version": "1.2.2",
+                "type": "drupal-library",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/antennaio/jquery-bar-rating/archive/v1.2.2.zip"
+                },
+                "require": {
+                    "antennaio/jquery-bar-rating": "1.2.2"
+                }
+            }
+        }
     },
     "extra": {
         "enable-patching": true,

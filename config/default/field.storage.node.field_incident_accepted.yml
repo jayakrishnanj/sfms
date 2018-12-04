@@ -1,0 +1,22 @@
+uuid: 6ff553a5-e9c0-4142-956d-87b1a044f5f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - votingapi_widgets
+id: node.field_incident_accepted
+field_name: field_incident_accepted
+entity_type: node
+type: voting_api_field
+settings:
+  vote_type: vote
+  vote_plugin: like
+  status: ''
+module: votingapi_widgets
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

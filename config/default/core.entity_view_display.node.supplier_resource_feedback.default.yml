@@ -3,26 +3,64 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.supplier_resource_feedback.body
+    - core.entity_view_display.comment.notes.default
+    - field.field.node.supplier_resource_feedback.field_srf_notes
+    - field.field.node.supplier_resource_feedback.field_srf_project
+    - field.field.node.supplier_resource_feedback.field_srf_rating
+    - field.field.node.supplier_resource_feedback.field_srf_supplier_resource
     - node.type.supplier_resource_feedback
   module:
-    - text
+    - comment
+    - panelizer
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.supplier_resource_feedback.default
 targetEntityType: node
 bundle: supplier_resource_feedback
 mode: default
 content:
-  body:
+  field_srf_notes:
+    weight: 4
     label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_srf_project:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_srf_rating:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_srf_supplier_resource:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

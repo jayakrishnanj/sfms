@@ -1,0 +1,14 @@
+uuid: 6a1403fe-6b09-421d-a1e0-6984c2eeb75a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.rating_creator
+  module:
+    - user
+id: user_add_role_action.rating_creator
+label: 'Add the Rating creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: rating_creator

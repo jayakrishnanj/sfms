@@ -1,9 +1,12 @@
 module:
+  admin_toolbar: 0
+  auto_entitylabel: 0
   blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  comment: 0
   config: 0
   consumers: 0
   contact: 0
@@ -24,7 +27,9 @@ module:
   entity_browser: 0
   entity_embed: 0
   entity_reference: 0
+  entity_reference_revisions: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -99,10 +104,13 @@ module:
   video_embed_media: 0
   views_infinite_scroll: 0
   views_ui: 0
+  votingapi: 0
+  votingapi_widgets: 0
   workflows: 0
   menu_link_content: 1
   pathauto: 1
   views: 10
+  paragraphs: 11
   lightning: 1000
 theme:
   stable: 0

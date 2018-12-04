@@ -1,0 +1,37 @@
+uuid: 936f959b-0804-46b8-b2b2-84e6e87598f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rating.field_rating
+    - node.type.rating
+  module:
+    - entity_reference_revisions
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.rating.default
+targetEntityType: node
+bundle: rating
+mode: default
+content:
+  field_rating:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

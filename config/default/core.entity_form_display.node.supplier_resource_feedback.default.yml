@@ -3,73 +3,55 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.supplier_resource_feedback.body
+    - field.field.node.supplier_resource_feedback.field_srf_notes
+    - field.field.node.supplier_resource_feedback.field_srf_project
+    - field.field.node.supplier_resource_feedback.field_srf_rating
+    - field.field.node.supplier_resource_feedback.field_srf_supplier_resource
     - node.type.supplier_resource_feedback
   module:
-    - content_moderation
-    - path
-    - text
+    - comment
 id: node.supplier_resource_feedback.default
 targetEntityType: node
 bundle: supplier_resource_feedback
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 7
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  created:
-    type: datetime_timestamp
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  moderation_state:
-    type: moderation_state_default
-    weight: 5
-    settings: {  }
-    region: content
-    third_party_settings: {  }
-  path:
-    type: path
+  field_srf_notes:
     weight: 4
-    region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
+    type: comment_default
+    region: content
+  field_srf_project:
     weight: 2
-    region: content
+    settings: {  }
     third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 6
+    type: options_select
     region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
+  field_srf_rating:
     weight: 3
-    region: content
+    settings: {  }
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
+    type: options_buttons
+    region: content
+  field_srf_supplier_resource:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
     weight: 0
+    region: content
     settings:
-      match_operator: CONTAINS
       size: 60
       placeholder: ''
-    region: content
     third_party_settings: {  }
 hidden:
-  title: true
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

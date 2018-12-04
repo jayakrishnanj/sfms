@@ -1,0 +1,28 @@
+uuid: ac719508-47c9-4cb4-9e8a-0a4e16393e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_incident_supplier_resource
+    - node.type.incident
+    - node.type.supplier_resource
+id: node.incident.field_incident_supplier_resource
+field_name: field_incident_supplier_resource
+entity_type: node
+bundle: incident
+label: 'Supplier Resource'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      supplier_resource: supplier_resource
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

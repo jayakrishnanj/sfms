@@ -1,0 +1,43 @@
+uuid: 4ad9d12e-f925-44d8-9ec4-db7a1f50c574
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ratings.field_paragraph_rating_detail
+    - field.field.paragraph.ratings.field_paragraph_rating_title
+    - field.field.paragraph.ratings.field_rating
+    - paragraphs.paragraphs_type.ratings
+  module:
+    - votingapi_widgets
+id: paragraph.ratings.default
+targetEntityType: paragraph
+bundle: ratings
+mode: default
+content:
+  field_paragraph_rating_detail:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_paragraph_rating_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_rating:
+    weight: 2
+    settings:
+      show_initial_vote: 0
+    third_party_settings: {  }
+    type: voting_api_widget
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

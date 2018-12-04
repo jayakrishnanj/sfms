@@ -3,27 +3,65 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.notes.default
+    - field.field.node.supplier_feedback.field_sf_notes
     - field.field.node.supplier_feedback.field_sf_project
+    - field.field.node.supplier_feedback.field_sf_rating
     - field.field.node.supplier_feedback.field_sf_supplier
     - node.type.supplier_feedback
   module:
+    - comment
+    - panelizer
+    - slick_entityreference
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.supplier_feedback.default
 targetEntityType: node
 bundle: supplier_feedback
 mode: default
 content:
+  field_sf_notes:
+    weight: 104
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
   field_sf_project:
     weight: 102
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_sf_rating:
+    weight: 103
+    label: hidden
+    settings:
+      override: false
+      overridables: {  }
+      skin_arrows: ''
+      skin_dots: ''
+      cache: 0
+      current_view_mode: ''
+      optionset: default
+      skin: ''
+      style: ''
+      view_mode: ''
+    third_party_settings: {  }
+    type: slick_entityreference_vanilla
+    region: content
   field_sf_supplier:
     weight: 101
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
@@ -31,7 +69,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

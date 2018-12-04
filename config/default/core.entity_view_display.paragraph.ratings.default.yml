@@ -1,0 +1,44 @@
+uuid: e72e894b-de88-4eb8-b4e7-a965d02cb415
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ratings.field_paragraph_rating_detail
+    - field.field.paragraph.ratings.field_paragraph_rating_title
+    - field.field.paragraph.ratings.field_rating
+    - paragraphs.paragraphs_type.ratings
+  module:
+    - votingapi_widgets
+id: paragraph.ratings.default
+targetEntityType: paragraph
+bundle: ratings
+mode: default
+content:
+  field_paragraph_rating_detail:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_paragraph_rating_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_rating:
+    weight: 2
+    label: hidden
+    settings:
+      readonly: false
+      style: default
+      show_results: false
+      values: {  }
+      show_own_vote: false
+    third_party_settings: {  }
+    type: voting_api_formatter
+    region: content
+hidden: {  }

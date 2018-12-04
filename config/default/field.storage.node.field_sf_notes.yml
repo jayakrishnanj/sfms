@@ -1,0 +1,20 @@
+uuid: cc8a5adb-3e0d-464a-b464-a2732dfa90ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_sf_notes
+field_name: field_sf_notes
+entity_type: node
+type: comment
+settings:
+  comment_type: notes
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

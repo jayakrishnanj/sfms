@@ -1,0 +1,25 @@
+uuid: 844e4a8c-c513-41d0-8b0d-685049e09ddc
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.notes
+    - field.field.comment.notes.comment_body
+  module:
+    - text
+id: comment.notes.default
+targetEntityType: comment
+bundle: notes
+mode: default
+content:
+  comment_body:
+    type: text_textarea
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  author: true
+  subject: true

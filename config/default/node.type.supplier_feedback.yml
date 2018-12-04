@@ -14,5 +14,5 @@ type: supplier_feedback
 description: 'Provide Feedback about the Supplier on the project.'
 help: ''
 new_revision: true
-preview_mode: 1
-display_submitted: true
+preview_mode: 0
+display_submitted: false

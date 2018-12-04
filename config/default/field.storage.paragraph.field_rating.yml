@@ -1,0 +1,22 @@
+uuid: 59d5a6da-5d6e-4ba2-9b95-e3fb288c6ad2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - votingapi_widgets
+id: paragraph.field_rating
+field_name: field_rating
+entity_type: paragraph
+type: voting_api_field
+settings:
+  vote_type: vote
+  vote_plugin: fivestar
+  status: ''
+module: votingapi_widgets
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

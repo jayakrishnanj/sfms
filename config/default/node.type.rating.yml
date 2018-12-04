@@ -1,0 +1,18 @@
+uuid: 3f29297d-7e16-48ef-9425-4d2786f79235
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Rating
+type: rating
+description: 'Add all the question or details required for which rating is required.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,28 @@
+uuid: 75faba9a-5b85-485d-bd8c-354127736746
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_srf_rating
+    - node.type.rating
+    - node.type.supplier_resource_feedback
+id: node.supplier_resource_feedback.field_srf_rating
+field_name: field_srf_rating
+entity_type: node
+bundle: supplier_resource_feedback
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      rating: rating
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

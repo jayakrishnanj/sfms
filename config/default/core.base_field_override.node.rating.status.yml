@@ -1,0 +1,22 @@
+uuid: a815d921-2e47-4388-8d91-732284295f54
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rating
+id: node.rating.status
+field_name: status
+entity_type: node
+bundle: rating
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

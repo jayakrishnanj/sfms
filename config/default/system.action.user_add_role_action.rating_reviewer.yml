@@ -1,0 +1,14 @@
+uuid: 693b90d7-5d16-430a-90ca-e215de585507
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.rating_reviewer
+  module:
+    - user
+id: user_add_role_action.rating_reviewer
+label: 'Add the Rating reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: rating_reviewer

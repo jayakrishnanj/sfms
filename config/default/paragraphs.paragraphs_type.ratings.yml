@@ -1,0 +1,9 @@
+uuid: 0f66abe7-1dd1-4e95-8793-e3326715b9f9
+langcode: en
+status: true
+dependencies: {  }
+id: ratings
+label: Ratings
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

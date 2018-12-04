@@ -1,0 +1,7 @@
+status: '1'
+pattern: 'Feedback for [node:field_srf_supplier_resource:entity:title]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.supplier_resource_feedback

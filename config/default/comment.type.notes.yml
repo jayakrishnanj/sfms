@@ -1,0 +1,8 @@
+uuid: 98dc9602-ecc7-4903-b46e-ab40402b246e
+langcode: en
+status: true
+dependencies: {  }
+id: notes
+label: Notes
+target_entity_type_id: node
+description: 'Provide short notes on the entity type.'

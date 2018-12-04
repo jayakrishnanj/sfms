@@ -1,0 +1,19 @@
+uuid: 23b3ba75-6b5b-4743-a489-b56be638d522
+langcode: en
+status: true
+dependencies: {  }
+id: rating_reviewer
+label: 'Rating reviewer'
+weight: 20
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'delete any rating content'
+  - 'edit any rating content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'view any unpublished content'
+  - 'view latest version'
